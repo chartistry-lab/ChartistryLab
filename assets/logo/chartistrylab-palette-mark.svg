@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">ChartistryLab palette data mark</title>
+  <desc id="desc">A refined artist palette with five paint dots connected as a data line over a faint graph-paper grid.</desc>
+  <defs>
+    <linearGradient id="palette-fill" x1="189" y1="180" x2="992" y2="911" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".58" stop-color="#fbfbf7"/>
+      <stop offset="1" stop-color="#f2efe8"/>
+    </linearGradient>
+    <linearGradient id="blue-dot" x1="306" y1="395" x2="370" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1b73ff"/>
+      <stop offset="1" stop-color="#0b49c9"/>
+    </linearGradient>
+    <linearGradient id="cyan-dot" x1="430" y1="529" x2="500" y2="612" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1fd1d1"/>
+      <stop offset="1" stop-color="#0797b0"/>
+    </linearGradient>
+    <linearGradient id="violet-dot" x1="562" y1="425" x2="638" y2="513" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6d74ff"/>
+      <stop offset="1" stop-color="#5a2fbd"/>
+    </linearGradient>
+    <linearGradient id="rose-dot" x1="714" y1="511" x2="790" y2="596" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff4c9a"/>
+      <stop offset="1" stop-color="#d82472"/>
+    </linearGradient>
+    <linearGradient id="orange-dot" x1="838" y1="365" x2="910" y2="452" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffb12a"/>
+      <stop offset="1" stop-color="#ff6a2b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1200" fill="#ffffff"/>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M226 584C207 407 316 230 491 169C650 114 850 151 977 286C1096 413 1100 614 978 735C906 806 817 831 699 835C626 837 581 864 582 924C584 1004 478 1036 357 983C239 930 161 807 150 674C146 630 168 601 226 584Z"
+      fill="url(#palette-fill)" stroke="#061f42" stroke-width="19"/>
+
+    <g stroke="#061f42" stroke-width="2.1" opacity=".13">
+      <path d="M266 302H890M220 376H979M190 450H1024M173 524H1037M172 598H1019M191 672H968M228 746H876M286 820H703"/>
+      <path d="M335 252V879M413 209V927M491 178V953M569 160V945M647 154V850M725 162V815M803 188V804M881 233V757M959 319V657"/>
+    </g>
+
+    <g stroke="#061f42" stroke-width="10" opacity=".16">
+      <path d="M340 440L466 576L602 472L752 556L875 410"/>
+    </g>
+    <path d="M340 440L466 576L602 472L752 556L875 410" stroke="#061f42" stroke-width="13"/>
+  </g>
+
+  <g>
+    <circle cx="340" cy="440" r="43" fill="url(#blue-dot)"/>
+    <circle cx="466" cy="576" r="43" fill="url(#cyan-dot)"/>
+    <circle cx="602" cy="472" r="43" fill="url(#violet-dot)"/>
+    <circle cx="752" cy="556" r="43" fill="url(#rose-dot)"/>
+    <circle cx="875" cy="410" r="43" fill="url(#orange-dot)"/>
+    <g fill="#ffffff" opacity=".78">
+      <ellipse cx="326" cy="424" rx="13" ry="8" transform="rotate(-25 326 424)"/>
+      <ellipse cx="452" cy="558" rx="13" ry="8" transform="rotate(-25 452 558)"/>
+      <ellipse cx="588" cy="455" rx="13" ry="8" transform="rotate(-25 588 455)"/>
+      <ellipse cx="737" cy="539" rx="13" ry="8" transform="rotate(-25 737 539)"/>
+      <ellipse cx="861" cy="393" rx="13" ry="8" transform="rotate(-25 861 393)"/>
+    </g>
+  </g>
+
+  <g opacity=".9">
+    <g fill="#125edb">
+      <circle cx="248" cy="286" r="5"/>
+      <circle cx="226" cy="326" r="7"/>
+      <circle cx="218" cy="370" r="9"/>
+      <circle cx="229" cy="414" r="8"/>
+      <circle cx="257" cy="456" r="6"/>
+      <circle cx="294" cy="489" r="4"/>
+    </g>
+    <g fill="#09a9bf">
+      <circle cx="293" cy="255" r="4"/>
+      <circle cx="318" cy="294" r="5"/>
+      <circle cx="300" cy="343" r="6"/>
+      <circle cx="323" cy="392" r="5"/>
+      <circle cx="354" cy="335" r="4"/>
+      <circle cx="367" cy="282" r="3"/>
+    </g>
+  </g>
+
+  <ellipse cx="744" cy="293" rx="119" ry="71" transform="rotate(-23 744 293)" fill="#ffffff" stroke="#061f42" stroke-width="16"/>
+  <ellipse cx="704" cy="266" rx="30" ry="13" transform="rotate(-23 704 266)" fill="#f8fbff" opacity=".85"/>
+</svg>

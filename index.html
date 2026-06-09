@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChartistryLab | Scientific Data Visualization Challenge</title>
+    <meta
+      name="description"
+      content="ChartistryLab is a scientific data visualization challenge for revealing unexpected insight in research datasets through clear visual communication."
+    >
+    <meta name="theme-color" content="#071a34">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="ChartistryLab home">
+        <img src="assets/logo/chartistrylab-palette-mark.svg" alt="" width="44" height="44">
+        <span>chartistry<span>lab</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#challenge">Challenge</a>
+        <a href="#tutorials">Tutorials</a>
+        <a href="#atlas">Atlas</a>
+        <a href="#vote">Vote</a>
+        <a class="nav-action" href="#submit">Submit</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="section-label">Scientific data visualization contest</p>
+          <h1 id="hero-title">Reveal the science hidden in data.</h1>
+          <p class="hero-lede">
+            ChartistryLab challenges participants to turn provided scientific datasets
+            into a final image and caption that reveal something unexpected, rigorous,
+            and memorable.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#challenge">Explore the challenge</a>
+            <a class="button button-secondary" href="#submit">Prepare a submission</a>
+          </div>
+        </div>
+
+        <div class="visual-wall" aria-label="Scientific visualization gallery preview">
+          <article class="viz-card spectrum-card">
+            <div class="card-topline">
+              <span>X-ray spectrum</span>
+              <span>Dataset A</span>
+            </div>
+            <svg viewBox="0 0 360 190" role="img" aria-label="Layered spectral line chart">
+              <path class="grid-line" d="M24 38H336M24 76H336M24 114H336M24 152H336"></path>
+              <path class="axis-line" d="M24 166H336"></path>
+              <path class="series series-blue" d="M24 151 C62 142 86 118 111 121 S151 155 174 114 S212 41 238 63 S282 133 336 78"></path>
+              <path class="series series-pink" d="M24 160 C67 149 91 151 122 130 S174 99 199 121 S243 151 275 106 S311 70 336 94"></path>
+              <circle cx="238" cy="63" r="5"></circle>
+              <circle cx="275" cy="106" r="5"></circle>
+            </svg>
+            <p>Unexpected oxidation-state separation appears only after aligning the edge region.</p>
+          </article>
+
+          <article class="viz-card image-card">
+            <div class="scan-grid" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <span></span><span></span><span></span>
+              <span></span><span></span><span></span>
+            </div>
+            <div>
+              <div class="card-topline">
+                <span>Tomography slice</span>
+                <span>Dataset B</span>
+              </div>
+              <p>Spatial texture, segmentation choices, and uncertainty all belong in the story.</p>
+            </div>
+          </article>
+
+          <article class="viz-card insight-card">
+            <div class="mini-network" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <h2>One week. Two datasets. One visual argument.</h2>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-split" id="challenge" aria-labelledby="challenge-title">
+        <div>
+          <p class="section-label">Challenge format</p>
+          <h2 id="challenge-title">Visualize one dataset. Explain what it reveals.</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Participants receive one week to visualize one of two scientific datasets.
+            The final submission is a single image with a caption that explains the
+            insight. Supporting process notes, failed attempts, and analysis details
+            are welcome when they sharpen the scientific story.
+          </p>
+          <div class="steps" aria-label="Challenge steps">
+            <article>
+              <span>01</span>
+              <h3>Choose</h3>
+              <p>Select one provided dataset and define the scientific question your visual will answer.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Explore</h3>
+              <p>Use analysis, illustration, code, or AI-assisted workflows to uncover a defensible pattern.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Communicate</h3>
+              <p>Submit a final image and concise caption that make the insight legible to a broad scientific audience.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section tutorial-section" id="tutorials" aria-labelledby="tutorials-title">
+        <div class="section-heading">
+          <p class="section-label">Tutorial tracks</p>
+          <h2 id="tutorials-title">Build the visual and scientific toolkit.</h2>
+          <p>
+            Short tutorials will help participants move from raw data to responsible
+            visual communication.
+          </p>
+        </div>
+        <div class="tutorial-grid">
+          <article>
+            <span class="track-icon">I</span>
+            <h3>Scientific illustration</h3>
+            <p>Composition, annotation, color hierarchy, and figure polish.</p>
+          </article>
+          <article>
+            <span class="track-icon">AI</span>
+            <h3>AI-assisted workflows</h3>
+            <p>Using generative tools carefully while preserving data provenance.</p>
+          </article>
+          <article>
+            <span class="track-icon">X</span>
+            <h3>Fundamentals of X-rays</h3>
+            <p>Core ideas behind X-ray sources, synchrotrons, spectroscopy, imaging, and CT.</p>
+          </article>
+          <article>
+            <span class="track-icon">VC</span>
+            <h3>Vibe coding for tools</h3>
+            <p>Examples of lightweight scientific tools for exploration and presentation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section atlas-section" id="atlas" aria-labelledby="atlas-title">
+        <div class="section-heading">
+          <p class="section-label">Scientific visualization atlas</p>
+          <h2 id="atlas-title">A gallery of scientific perception.</h2>
+          <p>
+            Selected submissions will form a living atlas of scientific visualization:
+            images, captions, methods, and process notes that show how insight emerges.
+          </p>
+        </div>
+        <div class="atlas-grid" aria-label="Atlas preview">
+          <article class="atlas-item atlas-large">
+            <div class="atlas-art field-map" aria-hidden="true"></div>
+            <h3>Unexpected insight</h3>
+            <p>A submission should make a hidden structure easier to see, not just make the data prettier.</p>
+          </article>
+          <article class="atlas-item">
+            <div class="atlas-art rings" aria-hidden="true"></div>
+            <h3>Process notes</h3>
+            <p>Optional sketches, failures, and code traces can reveal why the final visual works.</p>
+          </article>
+          <article class="atlas-item">
+            <div class="atlas-art bars" aria-hidden="true"></div>
+            <h3>Caption craft</h3>
+            <p>The caption should state the claim, the evidence, and the relevant caveat.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section vote-section" id="vote" aria-labelledby="vote-title">
+        <div class="section-heading">
+          <p class="section-label">Community voting</p>
+          <h2 id="vote-title">Recognize different kinds of excellence.</h2>
+          <p>
+            Participants can vote across categories that reward discovery, communication,
+            design craft, and surprise.
+          </p>
+        </div>
+        <div class="vote-board" data-vote-board>
+          <button class="vote-card is-selected" type="button" data-category="Most Unexpected Insight">
+            <span>01</span>
+            <strong>Most Unexpected Insight</strong>
+          </button>
+          <button class="vote-card" type="button" data-category="Best Scientific Communication">
+            <span>02</span>
+            <strong>Best Scientific Communication</strong>
+          </button>
+          <button class="vote-card" type="button" data-category="Best Use of Color/Form">
+            <span>03</span>
+            <strong>Best Use of Color/Form</strong>
+          </button>
+          <button class="vote-card" type="button" data-category="Most Surprising Representation">
+            <span>04</span>
+            <strong>Most Surprising Representation</strong>
+          </button>
+        </div>
+        <p class="vote-status" data-vote-status aria-live="polite">
+          Previewing category: Most Unexpected Insight
+        </p>
+      </section>
+
+      <section class="submit-section" id="submit" aria-labelledby="submit-title">
+        <div>
+          <p class="section-label">Submission package</p>
+          <h2 id="submit-title">Prepare one image, one caption, and the evidence behind it.</h2>
+        </div>
+        <div class="submit-panel">
+          <ul>
+            <li>Final visualization image</li>
+            <li>Caption explaining what the visualization reveals</li>
+            <li>Dataset choice and source notes</li>
+            <li>Optional process notes, code, sketches, or failed attempts</li>
+          </ul>
+          <button class="button button-primary" type="button" data-copy-checklist>
+            Copy checklist
+          </button>
+          <p class="copy-status" data-copy-status aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#top">
+        <img src="assets/logo/chartistrylab-palette-mark.svg" alt="" width="32" height="32">
+        <span>ChartistryLab</span>
+      </a>
+      <p>Scientific visualization challenge materials, tutorials, atlas entries, and voting details.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
