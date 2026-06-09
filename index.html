@@ -6,7 +6,7 @@
     <title>ChartistryLab | Scientific Data Visualization Challenge</title>
     <meta
       name="description"
-      content="ChartistryLab is a scientific data visualization challenge for revealing unexpected insight in research datasets through clear visual communication."
+      content="ChartistryLab is a one-week scientific data visualization challenge and gallery of scientific perception."
     >
     <meta name="theme-color" content="#071a34">
     <link rel="stylesheet" href="styles.css">
@@ -14,8 +14,8 @@
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="ChartistryLab home">
-        <img src="assets/logo/chartistrylab-palette-mark.svg" alt="" width="44" height="44">
-        <span>chartistry<span>lab</span></span>
+        <img src="assets/logo/chartistrylab-palette-mark.svg" alt="" width="46" height="46">
+        <span>chartistry-<strong>lab</strong></span>
       </a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -29,215 +29,287 @@
         <a href="#tutorials">Tutorials</a>
         <a href="#atlas">Atlas</a>
         <a href="#vote">Vote</a>
-        <a class="nav-action" href="#submit">Submit</a>
+        <a href="#submit">Submit</a>
       </nav>
+
+      <a class="header-action" href="#submit">
+        <span>Submit</span>
+        <svg viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M4 10h10M10 6l4 4-4 4"></path>
+        </svg>
+      </a>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="section-label">Scientific data visualization contest</p>
           <h1 id="hero-title">Reveal the science hidden in data.</h1>
           <p class="hero-lede">
-            ChartistryLab challenges participants to turn provided scientific datasets
-            into a final image and caption that reveal something unexpected, rigorous,
-            and memorable.
+            A one-week visualization challenge using real scientific datasets.
+            Turn numbers into insight, share your story, and help build a gallery
+            of scientific perception.
           </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="#challenge">Explore the challenge</a>
-            <a class="button button-secondary" href="#submit">Prepare a submission</a>
+          <div class="hero-actions">
+            <a class="button button-primary" id="submit" href="mailto:chartistrylab@gmail.com?subject=ChartistryLab%20submission">
+              <span>Submit your visualization</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h10M10 6l4 4-4 4"></path>
+              </svg>
+            </a>
+            <a class="button button-link" href="#challenge">
+              <span>Learn more</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M10 4v11M6 11l4 4 4-4"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="proof-points" aria-label="Challenge highlights">
+            <article>
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <ellipse cx="20" cy="11" rx="12" ry="5"></ellipse>
+                <path d="M8 11v18c0 3 5 5 12 5s12-2 12-5V11M8 20c0 3 5 5 12 5s12-2 12-5"></path>
+              </svg>
+              <h2>Provided datasets</h2>
+              <p>Curated by scientists from leading labs</p>
+            </article>
+            <article>
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <circle cx="20" cy="20" r="13"></circle>
+                <path d="M20 10v11l8 5"></path>
+              </svg>
+              <h2>One week</h2>
+              <p>Create and submit your visualization</p>
+            </article>
+            <article>
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <circle cx="14" cy="14" r="5"></circle>
+                <circle cx="26" cy="14" r="5"></circle>
+                <circle cx="20" cy="25" r="5"></circle>
+                <path d="M6 32c1-5 5-8 11-8M34 32c-1-5-5-8-11-8"></path>
+              </svg>
+              <h2>Community vote</h2>
+              <p>Help choose standout visual stories</p>
+            </article>
           </div>
         </div>
 
-        <div class="visual-wall" aria-label="Scientific visualization gallery preview">
-          <article class="viz-card spectrum-card">
-            <div class="card-topline">
-              <span>X-ray spectrum</span>
-              <span>Dataset A</span>
-            </div>
-            <svg viewBox="0 0 360 190" role="img" aria-label="Layered spectral line chart">
-              <path class="grid-line" d="M24 38H336M24 76H336M24 114H336M24 152H336"></path>
-              <path class="axis-line" d="M24 166H336"></path>
-              <path class="series series-blue" d="M24 151 C62 142 86 118 111 121 S151 155 174 114 S212 41 238 63 S282 133 336 78"></path>
-              <path class="series series-pink" d="M24 160 C67 149 91 151 122 130 S174 99 199 121 S243 151 275 106 S311 70 336 94"></path>
-              <circle cx="238" cy="63" r="5"></circle>
-              <circle cx="275" cy="106" r="5"></circle>
+        <div class="hero-media" aria-label="Scientific visualization gallery preview">
+          <figure class="science-tile tile-spectrum">
+            <img src="assets/science/hero-spectrum.jpg" alt="X-ray emission spectrum visualization">
+          </figure>
+          <figure class="science-tile tile-galaxy">
+            <img src="assets/science/hero-galaxy.jpg" alt="Blue scientific intensity map">
+          </figure>
+          <figure class="science-tile tile-ct">
+            <img src="assets/science/hero-ct.jpg" alt="Grayscale computed tomography slice">
+          </figure>
+          <figure class="science-tile tile-volume">
+            <img src="assets/science/hero-volume.jpg" alt="Blue and gold volumetric scientific rendering">
+          </figure>
+          <figure class="science-tile tile-flow">
+            <img src="assets/science/hero-flow.jpg" alt="Colorful velocity flow field visualization">
+          </figure>
+          <figure class="science-tile tile-catalyst">
+            <img src="assets/science/hero-catalyst.jpg" alt="Catalyst performance plot">
+          </figure>
+          <figure class="science-tile tile-scatter">
+            <img src="assets/science/hero-scatter.jpg" alt="Scattering map visualization">
+          </figure>
+          <blockquote class="quote-card">
+            <p>The unexpected is often right there in the data - you just need the right view.</p>
+            <cite>- Argonne Data Visualization Challenge</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="process-section section-rule" id="challenge" aria-labelledby="challenge-title">
+        <h2 id="challenge-title">How the challenge works</h2>
+        <div class="process-grid">
+          <article>
+            <span>1</span>
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <ellipse cx="24" cy="15" rx="13" ry="5"></ellipse>
+              <path d="M11 15v20c0 3 6 6 13 6s13-3 13-6V15M11 25c0 3 6 6 13 6s13-3 13-6"></path>
             </svg>
-            <p>Unexpected oxidation-state separation appears only after aligning the edge region.</p>
+            <h3>Get the data</h3>
+            <p>Choose one of two curated scientific datasets provided for the challenge.</p>
           </article>
-
-          <article class="viz-card image-card">
-            <div class="scan-grid" aria-hidden="true">
-              <span></span><span></span><span></span>
-              <span></span><span></span><span></span>
-              <span></span><span></span><span></span>
-            </div>
-            <div>
-              <div class="card-topline">
-                <span>Tomography slice</span>
-                <span>Dataset B</span>
-              </div>
-              <p>Spatial texture, segmentation choices, and uncertainty all belong in the story.</p>
-            </div>
+          <article>
+            <span>2</span>
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M13 35l5-13 14-14 8 8-14 14-13 5zM29 11l8 8"></path>
+            </svg>
+            <h3>Visualize</h3>
+            <p>You have one week to explore the data and create your visualization.</p>
           </article>
-
-          <article class="viz-card insight-card">
-            <div class="mini-network" aria-hidden="true">
-              <i></i><i></i><i></i><i></i><i></i>
-            </div>
-            <h2>One week. Two datasets. One visual argument.</h2>
+          <article>
+            <span>3</span>
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M17 34h-3a8 8 0 0 1 1-16 11 11 0 0 1 21 3 7 7 0 0 1-1 13h-4M24 35V20M18 26l6-6 6 6"></path>
+            </svg>
+            <h3>Submit</h3>
+            <p>Upload your final image and caption explaining the insight. Add optional method notes.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="17" cy="17" r="5"></circle>
+              <circle cx="31" cy="17" r="5"></circle>
+              <circle cx="24" cy="29" r="5"></circle>
+              <path d="M8 40c1-6 6-10 13-10M40 40c-1-6-6-10-13-10"></path>
+            </svg>
+            <h3>Share &amp; inspire</h3>
+            <p>Your work is added to the Visualization Atlas - a growing gallery of scientific perception.</p>
+          </article>
+          <article>
+            <span>5</span>
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M16 9h16v8a8 8 0 0 1-16 0V9zM16 13H9v4a7 7 0 0 0 8 7M32 13h7v4a7 7 0 0 1-8 7M24 25v9M18 39h12"></path>
+            </svg>
+            <h3>Vote &amp; celebrate</h3>
+            <p>The community votes across categories to recognize the most impactful stories.</p>
           </article>
         </div>
       </section>
 
-      <section class="section section-split" id="challenge" aria-labelledby="challenge-title">
-        <div>
-          <p class="section-label">Challenge format</p>
-          <h2 id="challenge-title">Visualize one dataset. Explain what it reveals.</h2>
-        </div>
-        <div class="section-body">
-          <p>
-            Participants receive one week to visualize one of two scientific datasets.
-            The final submission is a single image with a caption that explains the
-            insight. Supporting process notes, failed attempts, and analysis details
-            are welcome when they sharpen the scientific story.
-          </p>
-          <div class="steps" aria-label="Challenge steps">
-            <article>
-              <span>01</span>
-              <h3>Choose</h3>
-              <p>Select one provided dataset and define the scientific question your visual will answer.</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>Explore</h3>
-              <p>Use analysis, illustration, code, or AI-assisted workflows to uncover a defensible pattern.</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>Communicate</h3>
-              <p>Submit a final image and concise caption that make the insight legible to a broad scientific audience.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section tutorial-section" id="tutorials" aria-labelledby="tutorials-title">
-        <div class="section-heading">
-          <p class="section-label">Tutorial tracks</p>
-          <h2 id="tutorials-title">Build the visual and scientific toolkit.</h2>
-          <p>
-            Short tutorials will help participants move from raw data to responsible
-            visual communication.
-          </p>
-        </div>
+      <section class="tutorial-section section-rule" id="tutorials" aria-labelledby="tutorials-title">
+        <h2 id="tutorials-title">Tutorial tracks</h2>
         <div class="tutorial-grid">
           <article>
-            <span class="track-icon">I</span>
-            <h3>Scientific illustration</h3>
-            <p>Composition, annotation, color hierarchy, and figure polish.</p>
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M9 12h21v27H9zM30 20l9-9 5 5-9 9-7 2 2-7zM15 19h9M15 27h8"></path>
+            </svg>
+            <h3>Scientific Illustration</h3>
+            <p>Principles of visual communication for science and research figures that inform.</p>
           </article>
           <article>
-            <span class="track-icon">AI</span>
-            <h3>AI-assisted workflows</h3>
-            <p>Using generative tools carefully while preserving data provenance.</p>
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M15 30a8 8 0 1 1 1-16 9 9 0 0 1 17 3 7 7 0 0 1-1 14H15zM17 31v5M24 31v7M31 31v5"></path>
+            </svg>
+            <h3>AI for Visualization</h3>
+            <p>Use AI to explore, generate, and refine insightful scientific visuals responsibly.</p>
           </article>
           <article>
-            <span class="track-icon">X</span>
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <ellipse cx="24" cy="24" rx="18" ry="7" transform="rotate(32 24 24)"></ellipse>
+              <ellipse cx="24" cy="24" rx="18" ry="7" transform="rotate(-32 24 24)"></ellipse>
+              <circle cx="24" cy="24" r="3"></circle>
+            </svg>
             <h3>Fundamentals of X-rays</h3>
-            <p>Core ideas behind X-ray sources, synchrotrons, spectroscopy, imaging, and CT.</p>
+            <p>Understand X-rays, from sources to spectroscopy and imaging.</p>
           </article>
           <article>
-            <span class="track-icon">VC</span>
-            <h3>Vibe coding for tools</h3>
-            <p>Examples of lightweight scientific tools for exploration and presentation.</p>
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M6 35h36M8 31c7 0 7-18 14-18s7 18 14 18M8 12v28"></path>
+            </svg>
+            <h3>Synchrotron &amp; X-ray Sources</h3>
+            <p>Explore how synchrotrons work and how they enable powerful measurements.</p>
+          </article>
+          <article>
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M7 16l17-8 17 8-17 8-17-8zM7 25l17 8 17-8M7 34l17 8 17-8"></path>
+            </svg>
+            <h3>Imaging &amp; CT</h3>
+            <p>From 2D images to 3D and 4D - principles and best practices in imaging.</p>
           </article>
         </div>
       </section>
 
-      <section class="section atlas-section" id="atlas" aria-labelledby="atlas-title">
-        <div class="section-heading">
-          <p class="section-label">Scientific visualization atlas</p>
-          <h2 id="atlas-title">A gallery of scientific perception.</h2>
-          <p>
-            Selected submissions will form a living atlas of scientific visualization:
-            images, captions, methods, and process notes that show how insight emerges.
-          </p>
+      <section class="atlas-section section-rule" id="atlas" aria-labelledby="atlas-title">
+        <h2 id="atlas-title">Visualization atlas</h2>
+        <p>A living gallery of scientific perception from our community.</p>
+        <div class="atlas-grid">
+          <article>
+            <img src="assets/science/atlas-turbulent.jpg" alt="Turbulent flow visualization">
+            <h3>Turbulent Flow in a Jet</h3>
+            <p>by Jordan Kim</p>
+          </article>
+          <article>
+            <img src="assets/science/atlas-electrode.jpg" alt="Battery electrode CT visualization">
+            <h3>Battery Electrode CT</h3>
+            <p>by Priya Natarajan</p>
+          </article>
+          <article>
+            <img src="assets/science/atlas-cosmic.jpg" alt="Cosmic web filament visualization">
+            <h3>Cosmic Web Filament</h3>
+            <p>by Leo Chen</p>
+          </article>
+          <article>
+            <img src="assets/science/atlas-neutron.jpg" alt="Neutron scattering map visualization">
+            <h3>Neutron Scattering Map</h3>
+            <p>by Aisha Rahman</p>
+          </article>
+          <article>
+            <img src="assets/science/atlas-catalyst.jpg" alt="Catalyst activity map visualization">
+            <h3>Catalyst Activity Map</h3>
+            <p>by Miguel Ortega</p>
+          </article>
         </div>
-        <div class="atlas-grid" aria-label="Atlas preview">
-          <article class="atlas-item atlas-large">
-            <div class="atlas-art field-map" aria-hidden="true"></div>
-            <h3>Unexpected insight</h3>
-            <p>A submission should make a hidden structure easier to see, not just make the data prettier.</p>
-          </article>
-          <article class="atlas-item">
-            <div class="atlas-art rings" aria-hidden="true"></div>
-            <h3>Process notes</h3>
-            <p>Optional sketches, failures, and code traces can reveal why the final visual works.</p>
-          </article>
-          <article class="atlas-item">
-            <div class="atlas-art bars" aria-hidden="true"></div>
-            <h3>Caption craft</h3>
-            <p>The caption should state the claim, the evidence, and the relevant caveat.</p>
-          </article>
-        </div>
+        <a class="atlas-link" href="#atlas">
+          <span>Explore the atlas</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M4 10h10M10 6l4 4-4 4"></path>
+          </svg>
+        </a>
       </section>
 
-      <section class="section vote-section" id="vote" aria-labelledby="vote-title">
-        <div class="section-heading">
-          <p class="section-label">Community voting</p>
-          <h2 id="vote-title">Recognize different kinds of excellence.</h2>
-          <p>
-            Participants can vote across categories that reward discovery, communication,
-            design craft, and surprise.
-          </p>
-        </div>
-        <div class="vote-board" data-vote-board>
+      <section class="vote-section section-rule" id="vote" aria-labelledby="vote-title">
+        <h2 id="vote-title">Voting categories</h2>
+        <div class="vote-grid" data-vote-board>
           <button class="vote-card is-selected" type="button" data-category="Most Unexpected Insight">
-            <span>01</span>
-            <strong>Most Unexpected Insight</strong>
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M18 35h12M20 41h8M33 21a9 9 0 1 0-18 0c0 4 3 7 5 10h8c2-3 5-6 5-10zM8 19H4M44 19h-4M12 8l-3-3M36 8l3-3"></path>
+            </svg>
+            <h3>Most Unexpected Insight</h3>
+            <p>Reveals something surprising and thought-provoking in the data.</p>
           </button>
           <button class="vote-card" type="button" data-category="Best Scientific Communication">
-            <span>02</span>
-            <strong>Best Scientific Communication</strong>
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M12 30a12 9 0 1 1 9-15 14 10 0 1 1 9 19h-7l-8 6v-7z"></path>
+            </svg>
+            <h3>Best Scientific Communication</h3>
+            <p>Tells a clear, accurate, and compelling scientific story.</p>
           </button>
-          <button class="vote-card" type="button" data-category="Best Use of Color/Form">
-            <span>03</span>
-            <strong>Best Use of Color/Form</strong>
+          <button class="vote-card" type="button" data-category="Best Use of Color & Form">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 7a17 17 0 0 0 0 34h4a5 5 0 0 0 0-10h-2a3 3 0 0 1 0-6h4a11 11 0 0 0 0-22z"></path>
+              <circle cx="16" cy="18" r="2"></circle>
+              <circle cx="22" cy="14" r="2"></circle>
+              <circle cx="18" cy="27" r="2"></circle>
+            </svg>
+            <h3>Best Use of Color &amp; Form</h3>
+            <p>Uses color, shape, and composition with intention and impact.</p>
           </button>
           <button class="vote-card" type="button" data-category="Most Surprising Representation">
-            <span>04</span>
-            <strong>Most Surprising Representation</strong>
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="21" cy="21" r="12"></circle>
+              <circle cx="21" cy="21" r="4"></circle>
+              <path d="M30 30l10 10"></path>
+            </svg>
+            <h3>Most Surprising Representation</h3>
+            <p>A fresh perspective through an original or unconventional visual approach.</p>
+          </button>
+          <button class="vote-card" type="button" data-category="People's Choice">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="16" cy="17" r="5"></circle>
+              <circle cx="32" cy="17" r="5"></circle>
+              <circle cx="24" cy="29" r="5"></circle>
+              <path d="M7 41c1-7 7-11 16-11M41 41c-1-7-7-11-16-11"></path>
+            </svg>
+            <h3>People's Choice</h3>
+            <p>The community's overall favorite visualization.</p>
           </button>
         </div>
         <p class="vote-status" data-vote-status aria-live="polite">
           Previewing category: Most Unexpected Insight
         </p>
       </section>
-
-      <section class="submit-section" id="submit" aria-labelledby="submit-title">
-        <div>
-          <p class="section-label">Submission package</p>
-          <h2 id="submit-title">Prepare one image, one caption, and the evidence behind it.</h2>
-        </div>
-        <div class="submit-panel">
-          <ul>
-            <li>Final visualization image</li>
-            <li>Caption explaining what the visualization reveals</li>
-            <li>Dataset choice and source notes</li>
-            <li>Optional process notes, code, sketches, or failed attempts</li>
-          </ul>
-          <button class="button button-primary" type="button" data-copy-checklist>
-            Copy checklist
-          </button>
-          <p class="copy-status" data-copy-status aria-live="polite"></p>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">
       <a class="footer-brand" href="#top">
-        <img src="assets/logo/chartistrylab-palette-mark.svg" alt="" width="32" height="32">
+        <img src="assets/logo/chartistrylab-palette-mark.svg" alt="" width="30" height="30">
         <span>ChartistryLab</span>
       </a>
       <p>Scientific visualization challenge materials, tutorials, atlas entries, and voting details.</p>
