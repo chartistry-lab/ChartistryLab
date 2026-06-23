@@ -1,85 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
-  <title id="title">ChartistryLab palette data mark</title>
-  <desc id="desc">A refined artist palette with five paint dots connected as a data line over a faint graph-paper grid.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="300 200 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Chartistry Lab palette data mark</title>
+  <desc id="desc">A palette-shaped scientific data mark with Batlow-colored points, gradient borders, grid lines, and sine-like trace curves.</desc>
   <defs>
-    <linearGradient id="palette-fill" x1="189" y1="180" x2="992" y2="911" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset=".58" stop-color="#fbfbf7"/>
-      <stop offset="1" stop-color="#f2efe8"/>
+    <path id="palette-shape" d="M642 231
+      C544 231 451 267 393 329
+      C332 395 323 487 347 574
+      C374 673 476 754 592 768
+      C707 783 822 732 876 650
+      C917 587 915 518 870 492
+      C841 475 806 480 793 447
+      C784 425 796 405 815 386
+      C850 350 842 303 802 273
+      C765 245 706 231 642 231 Z"/>
+    <clipPath id="palette-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#palette-shape"/>
+    </clipPath>
+    <linearGradient id="border-gradient" x1="350" y1="250" x2="885" y2="725" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#011959"/>
+      <stop offset=".52" stop-color="#226061" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#828231" stop-opacity=".82"/>
     </linearGradient>
-    <linearGradient id="blue-dot" x1="306" y1="395" x2="370" y2="480" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#1b73ff"/>
-      <stop offset="1" stop-color="#0b49c9"/>
-    </linearGradient>
-    <linearGradient id="cyan-dot" x1="430" y1="529" x2="500" y2="612" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#1fd1d1"/>
-      <stop offset="1" stop-color="#0797b0"/>
-    </linearGradient>
-    <linearGradient id="violet-dot" x1="562" y1="425" x2="638" y2="513" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#6d74ff"/>
-      <stop offset="1" stop-color="#5a2fbd"/>
-    </linearGradient>
-    <linearGradient id="rose-dot" x1="714" y1="511" x2="790" y2="596" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ff4c9a"/>
-      <stop offset="1" stop-color="#d82472"/>
-    </linearGradient>
-    <linearGradient id="orange-dot" x1="838" y1="365" x2="910" y2="452" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ffb12a"/>
-      <stop offset="1" stop-color="#ff6a2b"/>
-    </linearGradient>
+    <radialGradient id="dot-dark" cx="32%" cy="28%" r="76%">
+      <stop offset="0" stop-color="#17336e"/>
+      <stop offset="1" stop-color="#011959"/>
+    </radialGradient>
+    <radialGradient id="dot-teal" cx="32%" cy="28%" r="76%">
+      <stop offset="0" stop-color="#2b7371"/>
+      <stop offset="1" stop-color="#226061"/>
+    </radialGradient>
+    <radialGradient id="dot-olive" cx="32%" cy="28%" r="76%">
+      <stop offset="0" stop-color="#96923b"/>
+      <stop offset="1" stop-color="#828231"/>
+    </radialGradient>
+    <radialGradient id="dot-orange" cx="32%" cy="28%" r="76%">
+      <stop offset="0" stop-color="#f8ad83"/>
+      <stop offset="1" stop-color="#f29d6d"/>
+    </radialGradient>
+    <radialGradient id="dot-pink" cx="32%" cy="28%" r="76%">
+      <stop offset="0" stop-color="#ffd6ff"/>
+      <stop offset="1" stop-color="#faccfa"/>
+    </radialGradient>
   </defs>
 
-  <rect width="1200" height="1200" fill="#ffffff"/>
+  <use href="#palette-shape" fill="#ffffff"/>
 
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M226 584C207 407 316 230 491 169C650 114 850 151 977 286C1096 413 1100 614 978 735C906 806 817 831 699 835C626 837 581 864 582 924C584 1004 478 1036 357 983C239 930 161 807 150 674C146 630 168 601 226 584Z"
-      fill="url(#palette-fill)" stroke="#061f42" stroke-width="19"/>
-
-    <g stroke="#061f42" stroke-width="2.1" opacity=".13">
-      <path d="M266 302H890M220 376H979M190 450H1024M173 524H1037M172 598H1019M191 672H968M228 746H876M286 820H703"/>
-      <path d="M335 252V879M413 209V927M491 178V953M569 160V945M647 154V850M725 162V815M803 188V804M881 233V757M959 319V657"/>
+  <g clip-path="url(#palette-clip)">
+    <g stroke="#dfe5ec" stroke-width="1.6">
+      <path d="M376 220V790M429 220V790M482 220V790M535 220V790M588 220V790M641 220V790M694 220V790M747 220V790M800 220V790M853 220V790"/>
+      <path d="M300 256H930M300 309H930M300 362H930M300 415H930M300 468H930M300 521H930M300 574H930M300 627H930M300 680H930M300 733H930"/>
     </g>
 
-    <g stroke="#061f42" stroke-width="10" opacity=".16">
-      <path d="M340 440L466 576L602 472L752 556L875 410"/>
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M504 676C462 641 430 626 428 581C426 531 408 507 422 464C436 417 457 389 489 359C526 329 568 316 607 306"
+        stroke="#b0b9c6" stroke-width="3.4" opacity=".8"/>
+
+      <g stroke-width="1.15" opacity=".58">
+        <path d="M493 667C459 636 430 623 421 581C409 531 396 504 416 462C433 418 460 389 493 357C531 326 572 314 610 305" stroke="#011959"/>
+        <path d="M496 671C462 640 431 627 424 582C413 532 401 506 418 463C437 419 462 390 494 358C532 328 573 315 610 306" stroke="#0b315d"/>
+        <path d="M499 674C465 643 433 629 426 583C417 534 405 509 421 464C440 421 464 391 496 359C534 330 574 316 609 307" stroke="#164a61"/>
+        <path d="M502 677C468 646 435 632 429 585C422 536 410 511 424 465C443 423 467 393 498 360C536 332 575 317 609 308" stroke="#226061"/>
+        <path d="M505 680C472 649 438 635 432 587C426 539 414 514 427 467C446 425 470 395 501 362C538 334 576 318 608 309" stroke="#41705a"/>
+        <path d="M508 683C475 652 440 638 435 589C431 542 419 517 430 469C449 428 473 397 504 364C540 337 577 320 607 310" stroke="#64794a"/>
+        <path d="M511 686C478 655 443 641 438 591C435 546 424 520 433 471C452 431 476 399 507 366C542 340 579 321 606 311" stroke="#828231"/>
+        <path d="M514 689C482 658 446 644 441 593C440 549 429 523 436 473C455 434 479 402 510 368C544 343 580 323 605 312" stroke="#a18942"/>
+        <path d="M517 692C485 661 449 647 444 595C444 552 434 526 439 475C458 437 482 404 513 371C546 346 581 325 604 313" stroke="#bf904b"/>
+        <path d="M520 695C488 664 452 650 447 597C449 555 439 529 442 477C461 440 485 407 516 373C548 349 582 327 603 314" stroke="#d9965b"/>
+        <path d="M523 698C492 667 455 653 450 599C453 558 444 532 445 479C464 443 488 410 519 376C550 352 583 329 602 315" stroke="#f29d6d"/>
+      </g>
     </g>
-    <path d="M340 440L466 576L602 472L752 556L875 410" stroke="#061f42" stroke-width="13"/>
   </g>
+
+  <use href="#palette-shape" fill="none" stroke="url(#border-gradient)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="748" cy="614" rx="58" ry="41" transform="rotate(-22 748 614)"
+    fill="#ffffff" stroke="url(#border-gradient)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
 
   <g>
-    <circle cx="340" cy="440" r="43" fill="url(#blue-dot)"/>
-    <circle cx="466" cy="576" r="43" fill="url(#cyan-dot)"/>
-    <circle cx="602" cy="472" r="43" fill="url(#violet-dot)"/>
-    <circle cx="752" cy="556" r="43" fill="url(#rose-dot)"/>
-    <circle cx="875" cy="410" r="43" fill="url(#orange-dot)"/>
-    <g fill="#ffffff" opacity=".78">
-      <ellipse cx="326" cy="424" rx="13" ry="8" transform="rotate(-25 326 424)"/>
-      <ellipse cx="452" cy="558" rx="13" ry="8" transform="rotate(-25 452 558)"/>
-      <ellipse cx="588" cy="455" rx="13" ry="8" transform="rotate(-25 588 455)"/>
-      <ellipse cx="737" cy="539" rx="13" ry="8" transform="rotate(-25 737 539)"/>
-      <ellipse cx="861" cy="393" rx="13" ry="8" transform="rotate(-25 861 393)"/>
+    <circle cx="504" cy="676" r="29" fill="url(#dot-dark)"/>
+    <circle cx="428" cy="581" r="29" fill="url(#dot-teal)"/>
+    <circle cx="422" cy="464" r="29" fill="url(#dot-olive)"/>
+    <circle cx="489" cy="359" r="29" fill="url(#dot-orange)"/>
+    <circle cx="607" cy="306" r="29" fill="url(#dot-pink)"/>
+    <g fill="#ffffff" opacity=".12">
+      <circle cx="495" cy="666" r="14"/>
+      <circle cx="419" cy="571" r="14"/>
+      <circle cx="413" cy="454" r="14"/>
+      <circle cx="480" cy="349" r="14"/>
+      <circle cx="598" cy="296" r="14"/>
     </g>
   </g>
-
-  <g opacity=".9">
-    <g fill="#125edb">
-      <circle cx="248" cy="286" r="5"/>
-      <circle cx="226" cy="326" r="7"/>
-      <circle cx="218" cy="370" r="9"/>
-      <circle cx="229" cy="414" r="8"/>
-      <circle cx="257" cy="456" r="6"/>
-      <circle cx="294" cy="489" r="4"/>
-    </g>
-    <g fill="#09a9bf">
-      <circle cx="293" cy="255" r="4"/>
-      <circle cx="318" cy="294" r="5"/>
-      <circle cx="300" cy="343" r="6"/>
-      <circle cx="323" cy="392" r="5"/>
-      <circle cx="354" cy="335" r="4"/>
-      <circle cx="367" cy="282" r="3"/>
-    </g>
-  </g>
-
-  <ellipse cx="744" cy="293" rx="119" ry="71" transform="rotate(-23 744 293)" fill="#ffffff" stroke="#061f42" stroke-width="16"/>
-  <ellipse cx="704" cy="266" rx="30" ry="13" transform="rotate(-23 704 266)" fill="#f8fbff" opacity=".85"/>
 </svg>
