@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254">
+  <defs>
+    <path id="palette-shape" d="M642 231
+      C544 231 451 267 393 329
+      C332 395 323 487 347 574
+      C374 673 476 754 592 768
+      C707 783 822 732 876 650
+      C917 587 915 518 870 492
+      C841 475 806 480 793 447
+      C784 425 796 405 815 386
+      C850 350 842 303 802 273
+      C765 245 706 231 642 231 Z"/>
+    <clipPath id="palette-clip" clipPathUnits="userSpaceOnUse">
+      <path d="M642 231
+        C544 231 451 267 393 329
+        C332 395 323 487 347 574
+        C374 673 476 754 592 768
+        C707 783 822 732 876 650
+        C917 587 915 518 870 492
+        C841 475 806 480 793 447
+        C784 425 796 405 815 386
+        C850 350 842 303 802 273
+        C765 245 706 231 642 231 Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1254" height="1254" fill="#ffffff"/>
+
+  <g id="palette-logo">
+    <path d="M642 231
+      C544 231 451 267 393 329
+      C332 395 323 487 347 574
+      C374 673 476 754 592 768
+      C707 783 822 732 876 650
+      C917 587 915 518 870 492
+      C841 475 806 480 793 447
+      C784 425 796 405 815 386
+      C850 350 842 303 802 273
+      C765 245 706 231 642 231 Z" fill="#ffffff"/>
+
+    <g clip-path="url(#palette-clip)" opacity="0.95">
+      <g id="grid">
+        <path d="M376 220 V790" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M429 220 V790" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M482 220 V790" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M535 220 V790" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M588 220 V790" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M641 220 V790" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M694 220 V790" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M747 220 V790" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M800 220 V790" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M853 220 V790" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M300 256 H930" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M300 309 H930" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M300 362 H930" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M300 415 H930" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M300 468 H930" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M300 521 H930" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M300 574 H930" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M300 627 H930" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M300 680 H930" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+        <path d="M300 733 H930" fill="none" stroke="#dfe5ec" stroke-width="1.6"/>
+      </g>
+
+      <path d="M504 676 L428 581 L422 464 L489 359 L607 306" fill="none" stroke="#bac4d1" stroke-width="6" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="48 32"/>
+    </g>
+
+    <path d="M642 231
+      C544 231 451 267 393 329
+      C332 395 323 487 347 574
+      C374 673 476 754 592 768
+      C707 783 822 732 876 650
+      C917 587 915 518 870 492
+      C841 475 806 480 793 447
+      C784 425 796 405 815 386
+      C850 350 842 303 802 273
+      C765 245 706 231 642 231 Z" fill="none" stroke="#001b4d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="748" cy="614" rx="58" ry="41" transform="rotate(-22 748 614)" fill="#ffffff" stroke="#001b4d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g>
+      <circle cx="422" cy="464" r="29" fill="#18ad9d"/>
+      <circle cx="489" cy="359" r="29" fill="#f9b238"/>
+      <circle cx="607" cy="306" r="29" fill="#7247b8"/>
+      <circle cx="428" cy="581" r="29" fill="#10aaa4"/>
+      <circle cx="504" cy="676" r="29" fill="#1e7ed0"/>
+      <circle cx="413" cy="454" r="14" fill="#ffffff" opacity="0.08"/>
+      <circle cx="480" cy="349" r="14" fill="#ffffff" opacity="0.12"/>
+      <circle cx="598" cy="296" r="14" fill="#ffffff" opacity="0.10"/>
+      <circle cx="419" cy="571" r="14" fill="#ffffff" opacity="0.08"/>
+      <circle cx="495" cy="666" r="14" fill="#ffffff" opacity="0.08"/>
+    </g>
+  </g>
+
+  <g id="wordmark" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="162" font-weight="400" letter-spacing="0">
+    <text transform="matrix(1.006 0 0 0.90 148 920)" fill="#001b4d">Chartistry</text>
+    <text transform="matrix(0.832 0 0 0.90 884 921)" fill="#19aca5">Lab</text>
+  </g>
+</svg>
